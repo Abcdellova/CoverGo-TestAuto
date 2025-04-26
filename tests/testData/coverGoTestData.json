@@ -44,7 +44,7 @@
     "subject": "customer-service",
     "testMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
     "file": {
-        "path": "../Playwright/tests/testUploadFile.txt"
+        "path": "../CoverGo-TestAuto/tests/testUploadFile.txt"
     }
     
 }

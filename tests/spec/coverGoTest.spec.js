@@ -95,6 +95,7 @@ test.describe.serial('Customer Flow', () => {
 
     // Click the Signin text to log in
     await coverGoTest.signIn.waitFor({ state: 'visible' });
+    await expect(coverGoTest.signIn).toBeVisible();
     await coverGoTest.signIn.click();
 
     // Fill up the Email field
@@ -109,6 +110,7 @@ test.describe.serial('Customer Flow', () => {
 
     // Click the Login button
     await coverGoTest.submit.waitFor({ state: 'visible' });
+    await expect(coverGoTest.submit).toBeVisible();
     await coverGoTest.submit.click();
 
     // Assertion that the login is successful and landed on the expected page

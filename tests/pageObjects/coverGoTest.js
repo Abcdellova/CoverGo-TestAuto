@@ -217,78 +217,135 @@ class CoverGoTest {
       return this.page.locator("span[data-test='product-price']");
     }
 
+    /**
+     * @description Selector for Proceed button in Cart panel when checking out an item
+     */
     get proceedBtnInCart() {
       return this.page.locator("app-cart button[data-test*='proceed']");
     }
 
+    /**
+     * @description Selector for Proceed button in Login panel when checking out an item
+     */
     get proceedBtnInLogin() {
       return this.page.locator("app-login button[data-test*='proceed']");
     }
 
+    /**
+     * @description Selector for Proceed button in Address panel when checking out an item
+     */
     get proceedBtnInAddress() {
       return this.page.locator("app-address button[data-test*='proceed']");
     }
 
+    /**
+     * @description Selector for Payment Method dropdown field
+     */
     get paymentMethod() {
       return this.page.locator("select#payment-method");
     }
 
+    /**
+     * @description Selector for Comfirm button when checking out an item
+     */
     get confirmBtn() {
       return this.page.locator("button[data-test='finish']");
     }
 
+    /**
+     * @description Selector for alert message when the payment is successful
+     */
     get paymentSuccessful() {
       return this.page.locator("div[data-test='payment-success-message']");
     }
 
+    /**
+     * @description Selector for alert message when the order confirmation is successful
+     */
     get orderConfirmationTxt() {
       return this.page.locator("div#order-confirmation span");
     }
 
+    /**
+     * @description Selector for Invoice Numer on the table at Invoices tab
+     */
     get invoiceNumber() {
       return this.page.locator("table td:first-of-type");
     }
 
+    /**
+     * @description Selector for Hand Tools category under of Category
+     */
     get handToolsCategory() {
       return this.page.locator("a[href*='hand-tools']");
     }
 
+    /**
+     * @description Selector for Next button on the Home page
+     */
     get nextBtn() {
       return this.page.locator("li.page-item a[aria-label='Next']");
     }
 
+    /**
+     * @description Selector for Next button that is disabled on the Home page
+     */
     get disabledNextBtn() {
       return this.page.locator("li.page-item.disabled a[aria-label='Next']");
     }
 
+    /**
+     * @description Selector for Sort dropdown field on the Home page
+     */
     get sortDropDown() {
       return this.page.locator("select[data-test='sort']");
     }
 
+    /**
+     * @description Selector for grid titles on the Home page
+     */
     get gridTitlesInHome() {
       return this.page.locator("body h4");
     }
 
+    /**
+     * @description Selector for Language dropdown field
+     */
     get languagesDropDown() {
       return this.page.locator("#dropdown-animated");
     }
 
+    /**
+     * @description Selector for Subject dropdown field on the Contact form
+     */
     get subjectDropDown() {
       return this.page.locator("select#subject");
     }
 
+    /**
+     * @description Selector for Message textarea field on the Contact form
+     */
     get messageTextArea() {
       return this.page.locator("textarea#message");
     }
 
+    /**
+     * @description Selector for File Upload field on the Contact form
+     */
     get uploadFile() {
       return this.page.locator("input#attachment");
     }
 
+    /**
+     * @description Selector for alert message when submitting contact is successful
+     */
     get contactSuccessAlert() {
       return this.page.locator("app-contact div.alert-success");
     }
 
+    /**
+     * @description Selector for Hammer category under of Filter
+     */
     get filterByHammer() {
       return this.page.locator("//label[contains(text(), 'Hammer')]")
     }
@@ -324,6 +381,11 @@ class CoverGoTest {
       return this.page.locator(`a.card img[alt='${itemName}']`);
     }
 
+    /**
+     * @description Dynamically selector for languages displayed in Language feature
+     * @param {String} language 
+     * @returns Return element
+     */
     languageOpt(language) {
       return this.page.locator(`[data-test='lang-${language}']`);
     }
