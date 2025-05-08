@@ -1,10 +1,10 @@
 const { test, expect } = require('@playwright/test');
-const { CoverGoTest } = require('../pageObjects/coverGoTest');
+const { CoverGoTest } = require('../pageObjects/testAuto');
 let coverGoTest; // Declare globally in this file
 test.beforeEach(async ({ page }) => {
   coverGoTest = new CoverGoTest(page);
 });
-const testData = require('../testData/coverGoTestData.json');
+const testData = require('../testData/testAuto.json');
 const sharedData = {
   randomText: '',
   randomEmail: '',
